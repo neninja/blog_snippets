@@ -1,0 +1,4 @@
+baseURL = "http://s.neni.dev/"
+languageCode = "pt-br"
+title = "Snippets"
+theme = "ananke"
