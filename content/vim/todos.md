@@ -3,7 +3,6 @@ title: "Todos e Fixmes"
 date: 2021-03-18T10:17:41-03:00
 draft: false
 summary: "Pesquisa palavras TODO e FIXME no projeto"
-tags: [vim]
 ---
 
 Pesquisa palavras `TODO` e `FIXME` a partir do diretório que o vim foi aberto, ignorando pastas e arquivos do ``wildignore``.
