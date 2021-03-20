@@ -1,0 +1,24 @@
+/* Inspirações:
+ * https://b2a3e8.github.io/jekyll-theme-console
+ * https://pages-themes.github.io/hacker/
+ */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ui-base-color: var(--onedark-light-white);
+        --ui-text-color: var(--ui-base-color);
+        --ui-background-color: #000;
+        --ui-selection-text: var(--ui-background-color);
+        --ui-selection-background: var(--ui-base-color);
+
+        --ui-link-color: var(--onedark-blue);
+        --ui-link-rodape-color: var(--onedark-light-red);
+
+        --ui-text-color-pre: var(--ui-text-color);
+        --ui-background-color-pre: var(--onedark-dark-black);
+
+        --ui-border-color: var(--onedark-green);
+
+        --border: dashed 2px var(--ui-border-color);
+    }
+}

@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main>
+    <article>
+        <header class="">
+            <div>
+                <a href="{{.Site.BaseURL}}{{.Section}}">{{ humanize .Section | upper}}</a>
+            </div>
+            <h1 class="">{{- .Title -}}</h1>
+            {{ partial "time-post" . }}
+            {{if .Site.Params.Repo}}
+            <ul class="remote-options">
+                <li>
+                    <a href="{{.Site.Params.Repo}}/edit/main/content/{{replace .File.Path "\\" "/"}}">Edite este post</a>
+                </li>
+                <li>
+                    <a href="{{.Site.Params.Repo}}/commits/main/content/{{replace .File.Path "\\" "/"}}">Histórico de edição</a>
+                </li>
+            </ul>
+            {{end}}
+        </header>
+
+        {{- .Content -}}
+    </article>
+
+    {{ range .Params.tags }}
+    <li class="list">
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="">
+            {{- . -}}
+        </a>
+    </li>
+    {{ end }}
+</main>
+{{ end }}

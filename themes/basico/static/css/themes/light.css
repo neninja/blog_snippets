@@ -1,0 +1,33 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --ui-base-color: var(--onedark-dark-black);
+        --ui-text-color: var(--ui-base-color);
+        --ui-background-color: var(--onedark-light-white);
+        --ui-selection-text: var(--ui-background-color);
+        --ui-selection-background: var(--ui-base-color);
+
+        --ui-link-color: var(--onedark-dark-yellow);
+        --ui-link-rodape-color: var(--onedark-light-red);
+
+        --ui-text-color-pre: var(--onedark-light-white);
+        --ui-background-color-pre: var(--onedark-dark-black);
+
+        --ui-border-color: var(--onedark-dark-red);
+
+        --border: dashed 2px var(--ui-border-color);
+
+        /*
+        --ui-background-color: var(--onedark-light-white);
+        --ui-border-color: var(--onedark-dark-red);
+        --ui-background-color-pre: var(--onedark-dark-black);
+        --ui-base-color: var(--onedark-dark-black);
+        --ui-selection-text: var(--ui-background-color);
+        --ui-selection-background: var(--ui-base-color);
+        --ui-text-color: var(--ui-base-color);
+        --ui-link-color: var(--onedark-blue);
+        --ui-link-rodape-color: var(--onedark-light-red);
+
+        --border: dashed 2px var(--ui-border-color);
+        */
+    }
+}

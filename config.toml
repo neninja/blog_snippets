@@ -1,4 +1,8 @@
 baseURL = "http://s.neni.dev/"
 languageCode = "pt-br"
 title = "Snippets"
-theme = "ananke"
+description = "Blog com snippets questionavelmente uteis"
+theme = "basico"
+
+[params]
+repo = "http://github.com/nenitf/blog_snippets"

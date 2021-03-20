@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<main>
+    <h1>Ultimos posts</h1>
+    <ul class="cards">
+        {{ range ( where .Site.RegularPages "Type" "vim" | first 10 ) }}
+        <li class="card-item">
+            {{ partial "card-post" . }}
+        </li>
+        {{end}}
+    </ul>
+</main>
+{{ end }}
