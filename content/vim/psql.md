@@ -38,17 +38,17 @@ command! PsqlSelectAllTables Psql SELECT table_name FROM information_schema.tabl
 ```vim
 " vimrc-local
 
-"let g:dbs_psql = [
-"  \ { 'name': 'name_connection', 'url': '[<user>[:<password>]@][<host>[:<port>]]/[<database>]' },
-"  \ { 'name': 'db_dev', 'url': 'username:password@localhost:5432/database' },
-"  \ { 'name': 'db_prod', 'url': 'username:password@localhost:5432/database' },
-"  \ ]
-" let g:db_psql = 'name_conection'
+let g:dbs_psql = [
+  \ { 'name': 'db_dev', 'url': 'username:password@localhost:5432/database' },
+  \ { 'name': 'db_prod', 'url': 'username:password@localhost:5432/database' },
+  \ ]
 
-" function! g:PsqlCompleteTable(A, L, P) abort
-"     let commands = [ 
-"                 \ "users",
-"                 \]
-"     return filter(commands, 'v:val =~ "^" . a:A')
-" endfunction
+let g:db_psql = 'name_conection'
+
+function! g:PsqlCompleteTable(A, L, P) abort
+    let commands = [ 
+                \ "users",
+                \]
+    return filter(commands, 'v:val =~ "^" . a:A')
+endfunction
 ```
