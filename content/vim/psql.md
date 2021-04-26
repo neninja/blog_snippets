@@ -2,7 +2,7 @@
 title: "Queries postgresql"
 date: 2021-04-26T09:01:15-03:00
 draft: false
-summary: "Executa queries por ocmando"
+summary: "Executa queries por comando"
 ---
 
 Realiza execução de queries com `:Psql <query>`, como `:Psql select * from users where nickname = 'Neni'`.
