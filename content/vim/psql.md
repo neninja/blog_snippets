@@ -43,7 +43,7 @@ let g:dbs_psql = [
   \ { 'name': 'db_prod', 'url': 'username:password@localhost:5432/database' },
   \ ]
 
-let g:db_psql = 'name_conection'
+let g:db_psql = 'db_dev'
 
 function! g:PsqlCompleteTable(A, L, P) abort
     let commands = [ 
