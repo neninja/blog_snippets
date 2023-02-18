@@ -3,7 +3,7 @@
 <main>
     <h1>Ultimos posts</h1>
     <ul class="cards">
-        {{ range ( where .Site.RegularPages "Type" "vim" | first 10 ) }}
+        {{ range .Site.RegularPages | first 20}}
         <li class="card-item">
             {{ partial "card-post" . }}
         </li>
